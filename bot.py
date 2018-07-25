@@ -17,10 +17,7 @@ async def minecraft(ctx):
     userName = ctx.message.author.name
     userID = ctx.message.author.id
 
-    if ctx.message.server:
-        await bot.delete_message(ctx.message)
-    vip = discord.utils.get(ctx.message.server.roles, name="@everyone")
-    if vip in ctx.message.author.roles:
+    if ctx.message.server
         myline = random.choice(lines)
         split = myline.partition(":")
         
@@ -31,6 +28,4 @@ async def minecraft(ctx):
         await bot.send_message(ctx.message.author, embed=embed)
 
         print("{} Typed <minecraft".format(userName))
-    else:
-        await bot.send_message(ctx.message.author, "You need to be a VIP member to use this command, if you are a VIP member you must use this command in the server!")   
 bot.run("")
