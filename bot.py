@@ -1,4 +1,3 @@
-
 import discord
 from discord.ext import commands
 from discord.ext.commands import Bot
@@ -19,7 +18,6 @@ async def minecraft(ctx):
     userID = ctx.message.author.id
 
     if ctx.message.server:
-        await bot.delete_message(ctx.message)
         myline = random.choice(lines)
         split = myline.partition(":")
 
