@@ -8,9 +8,9 @@ bot = commands.Bot(command_prefix="<")
 lines = open(r'usermcalts.txt').read().splitlines()
 
 @bot.event
-async def on_ready():  
-  print('The bot is online!')
-   await bot.change_presence(game=discord.Game(name='Type <minecraft'))
+async def on_ready():
+    print('The bot is online!')
+   
     
 @bot.command(pass_context=True)
 async def minecraft(ctx):
@@ -33,4 +33,5 @@ async def minecraft(ctx):
         print("{} Typed <minecraft".format(userName))
     else:
         await bot.send_message(ctx.message.author, "You need to be a VIP member to use this command, if you are a VIP member you must use this command in the server!")   
-bot.run("NDcxNjY3NzA2NzEwNzIwNTMy.DjoK6g.-0ZTuNlkSnyR2bI9Tm55JfR_vIk")
+bot.run("NDcxNjY3NzA2NzEwNzIwNTMy.Djonfw.ZaalUaZguTA4uQjIdnawznSvqvM")
+
