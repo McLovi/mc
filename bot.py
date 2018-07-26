@@ -34,4 +34,4 @@ async def vipminecraft(ctx):
     else:
         await bot.send_message(ctx.message.author, "You need to be a VIP member to use this command!")
 
-bot.run("NDcxOTQ3NjQxODgyODA0MjI0.DjsRWw.xzK_Vc3MNSDBpiceFqt_7sNauAk")
+bot.run("NDcxOTQ3NjQxODgyODA0MjI0.Djs_Kg.RXq5Uao8RZdDPRzcJOte9esaFeI")
