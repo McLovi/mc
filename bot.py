@@ -19,7 +19,7 @@ async def minecraft(ctx):
 
     if ctx.message.server:
         await bot.delete_message(ctx.message)
-    vip = discord.utils.get(ctx.message.server.roles, name="@everyone")
+    vip = discord.utils.get(ctx.message.server.roles, name="VIP+")
     if vip in ctx.message.author.roles:
         myline = random.choice(lines)
         split = myline.partition(":")
