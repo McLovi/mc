@@ -13,7 +13,7 @@ async def on_ready():
    
     
 @bot.command(pass_context=True)
-async def minecraft(ctx):
+async def vipmc(ctx):
     userName = ctx.message.author.name
     userID = ctx.message.author.id
 
@@ -31,7 +31,7 @@ async def minecraft(ctx):
         embed.add_field(name="Password:", value=split[2], inline=False)
         await bot.send_message(ctx.message.author, embed=embed)
 
-        print("{} Typed <minecraft".format(userName))
+        print("{} Typed <vipmc".format(userName))
     else:
         await bot.send_message(ctx.message.author, "You need to be a VIP+ member to use this command, if you are a VIP+ member you must use this command in the server!")   
    
