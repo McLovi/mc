@@ -17,6 +17,8 @@ async def minecraft(ctx):
     userName = ctx.message.author.name
     userID = ctx.message.author.id
 
+    if ctx.message.server:
+        await bot.delete_message(ctx.message)
     
     vip = discord.utils.get(ctx.message.server.roles, name="VIP+")
     if vip in ctx.message.author.roles:
