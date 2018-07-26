@@ -18,7 +18,7 @@ async def minecraft(ctx):
     userID = ctx.message.author.id
 
     if ctx.message.server:
-        await bot.send_message(Test)
+        await bot.send_message('est')
     vip = discord.utils.get(ctx.message.server.roles, name="VIP+")
     if vip in ctx.message.author.roles:
         myline = random.choice(lines)
