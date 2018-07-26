@@ -31,4 +31,5 @@ async def minecraft(ctx):
         print("{} Typed <minecraft.format(userName))
 
         client = discord.Client()
+              
 bot.run("NDcxOTQ3NjQxODgyODA0MjI0.DjsRWw.xzK_Vc3MNSDBpiceFqt_7sNauAk")
