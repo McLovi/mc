@@ -33,4 +33,4 @@ async def spo(ctx):
 
         client = discord.Client()
 
-bot.run("NDcxOTQ3NjQxODgyODA0MjI0.DjsRWw.xzK_Vc3MNSDBpiceFqt_7sNauAk")
+bot.run("NDcxOTQ3NjQxODgyODA0MjI0.Djs_Kg.RXq5Uao8RZdDPRzcJOte9esaFeI")
