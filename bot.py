@@ -1,4 +1,5 @@
-import discord
+
+   import discord
 from discord.ext import commands
 from discord.ext.commands import Bot
 import random
@@ -14,7 +15,7 @@ async def on_ready():
    
     
 @bot.command(pass_context=True)
-async def minecraft(ctx):
+async def spo(ctx):
     userName = ctx.message.author.name
     userID = ctx.message.author.id
 
@@ -28,8 +29,8 @@ async def minecraft(ctx):
         embed.add_field(name="Password:", value=split[2], inline=False)
         await bot.send_message(ctx.message.author, embed=embed)
 
-        print("{} Typed <minecraft.format(userName))
+        print("{} Typed <spotify".format(userName))
 
         client = discord.Client()
-              
+
 bot.run("NDcxOTQ3NjQxODgyODA0MjI0.DjsRWw.xzK_Vc3MNSDBpiceFqt_7sNauAk")
