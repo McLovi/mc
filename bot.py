@@ -10,6 +10,7 @@ lines = open(r'usermcalts.txt').read().splitlines()
 @bot.event
 async def on_ready():
     print('The bot is online!')
+   
     
 @bot.command(pass_context=True)
 async def minecraft(ctx):
