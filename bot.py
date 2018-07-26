@@ -28,4 +28,4 @@ async def minecraft(ctx):
         await bot.send_message(ctx.message.author, embed=embed)
 
         print("{} Typed <minecraft".format(userName))
-bot.run("")
+bot.run("NDcxOTQ3NjQxODgyODA0MjI0.DjsPKQ.NJ2HV8UhYe6nIvTEdKH0wnvCFo0")
