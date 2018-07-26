@@ -4,7 +4,7 @@ from discord.ext.commands import Bot
 import random
 
 Client = discord.Client()
-bot = commands.Bot(command_prefix="<")
+bot = commands.Bot(command_prefix="$")
 lines = open(r'usermcalts.txt').read().splitlines()
 
 @bot.event
@@ -13,15 +13,11 @@ async def on_ready():
    
     
 @bot.command(pass_context=True)
-async def vipmc(ctx):
+async def getalt mc(ctx):
     userName = ctx.message.author.name
     userID = ctx.message.author.id
 
     if ctx.message.server:
-        await bot.delete_message(ctx.message)
-    
-    vip = discord.utils.get(ctx.message.server.roles, name="VIP+")
-    if vip in ctx.message.author.roles:
         myline = random.choice(lines)
         split = myline.partition(":")
         
