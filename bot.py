@@ -10,7 +10,7 @@ lines = open(r'usermcalts.txt').read().splitlines()
 @bot.event
 async def on_ready():
     print('The bot is online!')
-    await bot.change_presence(game=discord.Game(name='Type <getalt mc'))
+    await bot.change_presence(game=discord.Game(name='Type $getalt mc'))
    
     
 @bot.command(pass_context=True)
