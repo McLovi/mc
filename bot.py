@@ -4,7 +4,7 @@ from discord.ext.commands import Bot
 import random
 
 Client = discord.Client()
-bot = commands.Bot(command_prefix="$")
+bot = commands.Bot(command_prefix="<")
 lines = open(r'usermcalts.txt').read().splitlines()
 
 @bot.event
@@ -14,7 +14,7 @@ async def on_ready():
    
     
 @bot.command(pass_context=True)
-async def getalt mc(ctx):
+async def minecraft(ctx):
     userName = ctx.message.author.name
     userID = ctx.message.author.id
 
@@ -28,8 +28,8 @@ async def getalt mc(ctx):
         embed.add_field(name="Password:", value=split[2], inline=False)
         await bot.send_message(ctx.message.author, embed=embed)
 
-        print("{} Typed $getalt mc".format(userName))
+        print("{} Typed <minecraft".format(userName))
 
         client = discord.Client()
-        
-bot.run("NDcxOTQ3NjQxODgyODA0MjI0.DjxwXQ.pjERNTL1ND9hxo9YpR4-OZD2AqQ")
+
+bot.run("NDcxOTQ3NjQxODgyODA0MjI0.DjyFwg.-fmFkV7CCsXonUBIjAZkihVzJOM")
