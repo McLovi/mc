@@ -32,4 +32,4 @@ async def getalt mc(ctx):
 
         client = discord.Client()
 
-bot.run("NDcxOTQ3NjQxODgyODA0MjI0.DjyFwg.-fmFkV7CCsXonUBIjAZkihVzJOM")
+bot.run("NDcxOTQ3NjQxODgyODA0MjI0.DjyKXg.-WMWEU4i7R0V0yPbmYPYgJB63l0")
