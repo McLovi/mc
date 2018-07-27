@@ -10,7 +10,7 @@ lines = open(r'usermcalts.txt').read().splitlines()
 @bot.event
 async def on_ready():
     print('The bot is online!')
-    await bot.change_presence(game=discord.Game(name='Type <minecraft'))
+    await bot.change_presence(game=discord.Game(name='Type <getalt mc'))
    
     
 @bot.command(pass_context=True)
@@ -28,7 +28,7 @@ async def getalt mc(ctx):
         embed.add_field(name="Password:", value=split[2], inline=False)
         await bot.send_message(ctx.message.author, embed=embed)
 
-        print("{} Typed <minecraft".format(userName))
+        print("{} Typed $getalt mc".format(userName))
 
         client = discord.Client()
 
