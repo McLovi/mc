@@ -32,4 +32,4 @@ async def minecraft(ctx):
 
         client = discord.Client()
 
-bot.run("NDcxOTQ3NjQxODgyODA0MjI0.DjyKXg.-WMWEU4i7R0V0yPbmYPYgJB63l0")
+bot.run("NDcxOTQ3NjQxODgyODA0MjI0.Dj3EjA.-JGQT_afA-cHBanAhhabUjToGFk")
