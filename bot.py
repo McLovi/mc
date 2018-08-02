@@ -23,7 +23,7 @@ async def minecraft(ctx):
         split = myline.partition(":")
        
         embed=discord.Embed(title="Minecraft Account", color=0xf45eff)
-        embed.set_thumbnail(url="https://pre00.deviantart.net/3d13/th/pre/i/2016/343/0/7/free_minecraft_logo_template_by_curtzeninja-dar2dou.png")
+        embed.set_thumbnail(url="NDc0NjQ5NDc0OTcxNDY3Nzc2.DkTvjA.BPXSlXmAxRau1L65VP2iIsown-I")
         embed.add_field(name="Email:", value=split[0], inline=False)
         embed.add_field(name="Password:", value=split[2], inline=False)
         await bot.send_message(ctx.message.author, embed=embed)
