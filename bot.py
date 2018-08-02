@@ -12,9 +12,9 @@ async def on_ready():
     print('The bot is online!')
     await bot.change_presence(game=discord.Game(name='Type $minecraft'))
    
-@commands.cooldown(1, 10, commands.BucketType.user)
+@commands.cooldown(1, 15, commands.BucketType.user)
 @bot.command(pass_context=True)
-async def minecraft(ctx):
+async def getalt mc(ctx):
     userName = ctx.message.author.name
     userID = ctx.message.author.id
 
@@ -32,5 +32,4 @@ async def minecraft(ctx):
 
         client = discord.Client()
 
-bot.run("NDcxOTQ3NjQxODgyODA0MjI0.DkI53Q.dX0vgZ5KaMDm7IRKag9If-kr9gw")
-
+bot.run("NDc0NjQ5NDc0OTcxNDY3Nzc2.DkTvjA.BPXSlXmAxRau1L65VP2iIsown-I")
