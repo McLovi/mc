@@ -14,7 +14,7 @@ async def on_ready():
    
 @commands.cooldown(1, 15, commands.BucketType.user)
 @bot.command(pass_context=True)
-async def getalt mc(ctx):
+async def minecraft(ctx):
     userName = ctx.message.author.name
     userID = ctx.message.author.id
 
