@@ -12,7 +12,7 @@ async def on_ready():
     print('The bot is online!')
     await bot.change_presence(game=discord.Game(name='Type $minecraft'))
    
-@commands.cooldown(1, 15, commands.BucketType.user)
+@commands.cooldown(1, 300, commands.BucketType.user)
 @bot.command(pass_context=True)
 async def minecraft(ctx):
     userName = ctx.message.author.name
